@@ -14,6 +14,7 @@ export const rateLimiterMiddleware = async (
 ) => {
   try {
     const key = req.ip || req.headers['x-forwarded-for'] || 'unknown';
+    console.log(res);
     await rateLimiter.consume(key.toString());
     next();
   } catch {
