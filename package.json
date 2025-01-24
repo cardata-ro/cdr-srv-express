@@ -4,16 +4,11 @@
   "description": "A TypeScript-based Node.js API integrating OpenAI capabilities using Express.js",
   "main": "dist/server.js",
   "scripts": {
-    "postinstall": "npm install",
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "check-tsc": "tsc --version"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DotanVG/ts-node-openai-express-api.git"
   },
   "keywords": [
     "typescript",
@@ -22,12 +17,9 @@
     "openai",
     "api"
   ],
-  "author": "Dotan Veretzky <dotanvg@gmail.com>",
+  "author": "Catalin  Rosu",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DotanVG/ts-node-openai-express-api/issues"
-  },
-  "homepage": "https://github.com/DotanVG/ts-node-openai-express-api#readme",
+
   "devDependencies": {
     "typescript": "^5.7.3",
     "@types/express": "^4.17.21",
@@ -37,6 +29,7 @@
     "ts-node-dev": "^2.0.0"
   },
   "dependencies": {
+    "typescript": "^5.7.3",
     "dotenv": "^16.4.5",
     "envalid": "^8.0.0",
     "express": "^4.19.2",
