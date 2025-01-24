@@ -1,4 +1,4 @@
 [build]
     functions = "functions"
-     command = "npm run build"
-     publish = "dist"
+    command = "npm run check-tsc && npm run build"
+    publish = "dist"
