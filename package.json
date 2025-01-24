@@ -4,6 +4,7 @@
   "description": "A TypeScript-based Node.js API integrating OpenAI capabilities using Express.js",
   "main": "dist/server.js",
   "scripts": {
+    "postinstall": "npm install",
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
